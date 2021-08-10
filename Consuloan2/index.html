@@ -9,8 +9,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/consl.css" />
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/nav.css">
   </head>
-  <body>
+  <body id="body" style="position: relative;">
     
       <div class="pre-header blue">
         <div class="container">
@@ -27,18 +28,18 @@
             </div>
             <div class="yellow">
              
-              <p class=""> <span> <a href="#"><i class="far fa-envelope gold1 "></i></a></span><span class="hide">info.deercreative@gmail.com</span></p>
+              <p class=""> <span> <a href="#"><i class="far fa-envelope gold1 "></i></a></span><span class="hide1">info.deercreative@gmail.com</span></p>
             </div>
             <div class="yellow">
               
-              <p><span><a href="#"> <i class="fas fa-phone-alt gold1"></i></a></span><span class="hide">001-1214-666000</span></p>
+              <p><span><a href="#"> <i class="fas fa-phone-alt gold1"></i></a></span><span class="hide1">001-1214-666000</span></p>
             </div>
           </div></div>
           <div class="col-3">
             <div>
               <div class="d-flex">
                 <div style=" " class="white ">
-                  <button style="background-color: rgb(5, 5, 53); width: auto; height: auto; padding: 5px; margin-top: 4px;" class="button-link" id="button-link">Quote of the day</button>
+                  <button style="background-color: rgb(5, 5, 53); width: auto; height: auto; padding: 5px; margin-top: 4px;" class="button-link" id="button-link">Get Quotes</button>
                   <div class="modal" id="modal">
                     <div class="main-modal">
                       <div class="modal-header">
@@ -70,50 +71,30 @@
         </div>
         </div>
       </div>
-      <div class="header-container">
-        <header class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-6 m-md-2 col-sm-4  col-lg-3 m-sm-0" id="change">
-              <h3><span><i class="fas fa-layer-group"></i></span>Consuloan</h3>
-            </div>
-            <div class="col-lg-6 col-sm-4 ">
-              <nav class="navbar navbar-expand-lg">
-                <!-- Brand -->
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-
-                <!-- Toggler/collapsibe Button -->
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapsibleNavbar"
-                >
-                  <span class="navbar-toggler-icon"> <i style="font-size: 35px; margin-left: 100px;" class="fas fa-bars text-gold "></i></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services.html">SERVICES</a>
-                    </li>
-                    
-                
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">SIGN IN</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+      <div class="header-container " style="position: sticky; top: 0; z-index: 1;">
+        <header style="" class="">
+          <div style="padding: 3px;" class="container-nav" id="container-nav">
+            <div style="font-size: 30px;" class="logo-home"> <span style="font-size: 30px;"><i class="fas fa-layer-group"></i></span>Consuloan</div>
+            <div class="navbar-home" id="navbar-home">
+              <p id="icon" class="icon hide"><a href="#"> <i style="font-size: 35px" class="fas fa-bars text-gold"></i></a></p>
+              <ul style="margin-top: 4px;" class="ul-flex-home" id="ul-container-home">
+                <li class="">
+                  <a style="color:white" class="" href="index.html">HOME</a>
+                </li>
+                <li class="">
+                  <a class="" href="about.html">ABOUT US</a>
+                </li>
+                <li class="">
+                  <a class="" href="services.html">SERVICES</a>
+                </li>
+      
+                <li class="">
+                  <a class="" href="#">CONTACT</a>
+                </li>
+                <li class="">
+                  <a class="" href="#">SIGN IN</a>
+                </li>
+              </ul>
             </div>
           </div>
         </header>
@@ -497,6 +478,8 @@
 <script src="js/consl.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/random.js"></script>
+<script src="js/navbar.js"></script>
+
 <script>
   AOS.init();
 </script>
