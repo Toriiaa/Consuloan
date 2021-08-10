@@ -7,123 +7,144 @@
     <link rel="stylesheet" href="css/consl.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/nav.css" />
   </head>
   <body>
     <div class="">
-      <div class="pre-header blue">
-        <div class="container">
-          <div class="row justify-content-md-between">
-            <div class="col-6 mt-3">
-              <div class="d-flex justify-content-md-between">
-                <div>
-                  <select name="cars" size="1">
-                    <option value="English">English</option>
-                    <option value="Spanish">Spanish</option>
-                    <option value="French">French</option>
-                    <option value="Chinese">Chinese</option>
-                  </select>
-                </div>
-                <div class="yellow">
-                  <p class="">
-                    <span>
-                      <a href="#"
-                        ><i class="far fa-envelope gold1"></i></a></span
-                    ><span class="hide">info.deercreative@gmail.com</span>
-                  </p>
-                </div>
-                <div class="yellow">
-                  <p>
-                    <span
-                      ><a href="#">
-                        <i class="fas fa-phone-alt gold1"></i></a></span
-                    ><span class="hide">001-1214-666000</span>
-                  </p>
-                </div>
+      <div class="">
+        <div class="row justify-content-md-between">
+          <div class="col-6 mt-3">
+            <div class="d-flex justify-content-md-between">
+              <div>
+                <select name="cars" size="1">
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="French">French</option>
+                  <option value="Chinese">Chinese</option>
+                </select>
+              </div>
+              <div class="yellow">
+                <p class="">
+                  <span>
+                    <a href="#"><i class="far fa-envelope gold1"></i></a></span
+                  ><span class="hide1">info.deercreative@gmail.com</span>
+                </p>
+              </div>
+              <div class="yellow">
+                <p>
+                  <span
+                    ><a href="#">
+                      <i class="fas fa-phone-alt gold1"></i></a></span
+                  ><span class="hide1">001-1214-666000</span>
+                </p>
               </div>
             </div>
-            <div class="col-3">
-              <div>
-                <div class="d-flex">
-                  <p
+          </div>
+          <div class="col-3">
+            <div>
+              <div class="d-flex">
+                <div class="white">
+                  <button
                     style="
-                      background-color: white;
-                      padding-left: 5px;
-                      padding-bottom: 0;
-                      padding-right: 5px;
-                      margin-top: 20px;
+                      background-color: rgb(5, 5, 53);
+                      width: auto;
+                      height: auto;
+                      padding: 5px;
+                      margin-top: 4px;
                     "
-                    class="white hide"
+                    class="button-link"
+                    id="button-link"
                   >
-                    <a href="#"> GET A QUOTE</a>
-                  </p>
-                  <span class="mt-4"
-                    ><a href="https://www.facebook.com"
-                      ><i class="fab fa-facebook-f"></i></a
-                  ></span>
-                  <span class="mt-4"
-                    ><a href="https://twitter.com/explore"
-                      ><i class="fab fa-twitter"></i></a
-                  ></span>
-                  <span class="mt-4"
-                    ><i class="fab fa-youtube text-white"></i
-                  ></span>
+                    Get Quotes
+                  </button>
+                  <div class="modal" id="modal">
+                    <div class="main-modal">
+                      <div class="modal-header">
+                        <div class="quotes">Quote of the day</div>
+                        <div class="closeBtn" id="closebtn">&times;</div>
+                      </div>
+                      <div class="modal-content">
+                        <p id="quoteDisplay" style="color: black">
+                          Be yourself , everyone else is already taken" - Oscar
+                          Wilde
+                        </p>
+                        <button
+                          style="
+                            background-color: rgb(5, 5, 53);
+                            display: inline-block;
+                            color: white;
+                          "
+                          type="button"
+                          class="btn"
+                          onclick="newQuote()"
+                        >
+                          NEXT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <span class="mt-3"
+                  ><a href="https://www.facebook.com"
+                    ><i class="fab fa-facebook-f"></i></a
+                ></span>
+                <span class="mt-3"
+                  ><a href="https://twitter.com/explore"
+                    ><i class="fab fa-twitter"></i></a
+                ></span>
+                <span class="mt-3"
+                  ><i class="fab fa-youtube text-white"></i
+                ></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-container">
-        <header class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-6 m-md-2 col-sm-4 col-lg-3 m-sm-0" id="change">
-              <h3>
-                <span><i class="fas fa-layer-group"></i></span>Consuloan
-              </h3>
+      <div
+        class="header-container"
+        style="position: sticky; top: 0; z-index: 1"
+      >
+        <header>
+          <div style="padding: 3px" class="container-nav" id="container-nav">
+            <div style="font-size: 30px" class="logo-home">
+              <span style="font-size: 30px"
+                ><i class="fas fa-layer-group"></i></span
+              >Consuloan
             </div>
-            <div class="col-lg-6 col-sm-4">
-              <nav class="navbar navbar-expand-lg">
-                <!-- Brand -->
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <div class="navbar-home" id="navbar-home">
+              <p id="icon" class="icon hide">
+                <a href="#">
+                  <i style="font-size: 35px" class="fas fa-bars text-gold"></i
+                ></a>
+              </p>
+              <ul
+                style="margin-top: 4px"
+                class="ul-flex-home"
+                id="ul-container-home"
+              >
+                <li>
+                  <a style="color: white" class="" href="index.html">HOME</a>
+                </li>
+                <li>
+                  <a class="" href="about.html">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="services.html">SERVICES</a>
+                </li>
 
-                <!-- Toggler/collapsibe Button -->
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapsibleNavbar"
-                >
-                  <span class="navbar-toggler-icon">
-                    <i
-                      style="font-size: 35px; margin-left: 100px"
-                      class="fas fa-bars text-gold"
-                    ></i
-                  ></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="services.html">SERVICES</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+                <li>
+                  <a href="#">CONTACT</a>
+                </li>
+                <li>
+                  <a href="#">SIGN IN</a>
+                </li>
+              </ul>
             </div>
           </div>
         </header>
       </div>
+
       <main>
         <div class="main-container">
           <section
@@ -137,190 +158,21 @@
               <a href="#" class="text-white">About Us>></a>
             </div>
           </section>
-
-          <section class="section2a" style="margin: 0; height: 50vh">
-            <div>
+          <section class="" style="height: 40vh; margin-bottom: 10px">
+            <div class="">
               <img
-                style="width: 100%"
+                style="height: auto; width: 100%"
                 src="images/pexels-rebrand-cities-1367272.jpg"
                 alt=""
               />
             </div>
           </section>
-          <section3>
-            <h3 class="text-center">MEET OUR TEAM</h3>
-            <div class="container">
-              <div id="accordion" class="row justify-content-lg-around">
-                <div class="card col-lg-3 col-sm-12 m-2">
-                  <div class="card-header">
-                    <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#collapseOne"
-                    >
-                      <div>
-                        <img
-                          style="width: 100%"
-                          src="images/pexels-andrea-piacquadio-3769021.jpg"
-                          alt=""
-                        />
-                        <h5 class="text-center">Merit Oriaghe</h5>
-                        <p class="text-center">Managing Director</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    id="collapseOne"
-                    onclick="show"
-                    class="collapse"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">Lorem ipsum..</div>
-                  </div>
-                </div>
-                <div class="card col-lg-3 col-sm-12 m-2">
-                  <div class="card-header">
-                    <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#collapseTwo"
-                    >
-                      <div>
-                        <img
-                          style="width: 100%"
-                          src="images/pexels-andrea-piacquadio-3769021.jpg"
-                          alt=""
-                        />
-                        <h5 class="text-center">Merit Oriaghe</h5>
-                        <p class="text-center">Managing Director</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    id="collapseTwo"
-                    onclick="show"
-                    class="collapse"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">Lorem ipsum..</div>
-                  </div>
-                </div>
-                <div class="card col-lg-3 col-sm-12 m-2">
-                  <div class="card-header">
-                    <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#collapseThree"
-                    >
-                      <div>
-                        <img
-                          style="width: 100%"
-                          src="images/pexels-andrea-piacquadio-3769021.jpg"
-                          alt=""
-                        />
-                        <h5 class="text-center">Merit Oriaghe</h5>
-                        <p class="text-center">Managing Director</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    id="collapseThree"
-                    class="collapse"
-                    onclick="show"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">Lorem ipsum..</div>
-                  </div>
-                </div>
-                <div class="card col-lg-3 col-sm-12 m-2">
-                  <div class="card-header">
-                    <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#collapseFour"
-                    >
-                      <div>
-                        <img
-                          style="width: 100%"
-                          src="images/pexels-andrea-piacquadio-3769021.jpg"
-                          alt=""
-                        />
-                        <h5 class="text-center">Merit Oriaghe</h5>
-                        <p class="text-center">Managing Director</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    class="collapse"
-                    onclick="show"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">Lorem ipsum..</div>
-                  </div>
-                </div>
-                <div class="card col-lg-3 col-sm-12 m-2">
-                  <div class="card-header">
-                    <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#collapseFive"
-                    >
-                      <div>
-                        <img
-                          style="width: 100%"
-                          src="images/pexels-andrea-piacquadio-3769021.jpg"
-                          alt=""
-                        />
-                        <h5 class="text-center">Merit Oriaghe</h5>
-                        <p class="text-center">Managing Director</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    id="collapseFive"
-                    class="collapse"
-                    onclick="show"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">Lorem ipsum..</div>
-                  </div>
-                </div>
-                <div class="card col-lg-3 col-sm-12 m-2">
-                  <div class="card-header">
-                    <a
-                      class="card-link"
-                      data-toggle="collapse"
-                      href="#collapseSix"
-                    >
-                      <div>
-                        <img
-                          style="width: 100%"
-                          src="images/pexels-andrea-piacquadio-3769021.jpg"
-                          alt=""
-                        />
-                        <h5 class="text-center">Merit Oriaghe</h5>
-                        <p class="text-center">Managing Director</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    id="collapseSix"
-                    class="collapse"
-                    onclick="show"
-                    data-parent="#accordion"
-                  >
-                    <div class="card-body">Lorem ipsum..</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section3>
-          <section style="height: 90vh" class="section4a blue">
+
+          <section style="height: auto" class="section4a blue">
             <h3 class="text-center text-white">JOIN US</h3>
             <div class="container">
-              <div class="row">
-                <div class="form-group bg-light m-4 col-5">
+              <div style="" class="d-flex justify-content-center">
+                <div class="form-group bg-light m-4 col-lg-5 col-sm-12">
                   <form style="width: 100%" class="was.was-validated">
                     <div class="m-2 form-item">
                       <input
@@ -395,20 +247,18 @@
                     </button>
                   </form>
                 </div>
-                <div class="m-4 col-5">
-                  <div style="height: auto">
+                <!-- <div class="m-4 col-lg-6 col-sm-12">
+                  <div style="height: auto; width: 100%">
                     <img
                       style="width: 100%; height: 100%"
-                      src="images/pexels-pixabay-326576.jpg"
+                      src="images/three-people-sitting-inside-room-2422277.jpg"
                       alt=""
                     />
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
-
-          <section class="section5"></section>
         </div>
       </main>
       <footer>
@@ -534,6 +384,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/consl.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/random.js"></script>
     <script>
       AOS.init();
     </script>
