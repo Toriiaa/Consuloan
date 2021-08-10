@@ -52,9 +52,10 @@ button {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-image: linear-gradient(to right, rgba(47, 47, 182, 0.76), white);
+  /* background-image: linear-gradient(to right, rgba(47, 47, 182, 0.76), white); */
+  background-color: rgb(5, 5, 53);
 }
-.image-container2 {
+/* .image-container2 {
   background-color: rgb(243, 239, 217);
   border-radius: 51%;
   width: 125px;
@@ -64,7 +65,7 @@ body {
   left: -30px;
   box-shadow: 2px 2px 5px white;
   z-index: -1;
-}
+} */
 /* .image-container {
   background-color: #23bbe9;
   border-radius: 51%;
