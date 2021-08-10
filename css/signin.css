@@ -6,7 +6,7 @@
   height: 100vh;
 }
 .inner-container {
-  background-color: rgba(221, 213, 213, 0.089);
+  background-color: #f5f8fa;
   border-radius: 12px;
   padding: 30px;
   border: 2px solid rgba(255, 255, 255, 0.178);
@@ -26,7 +26,7 @@ input {
   margin: 5px 0;
   width: 100%;
   border-radius: 12px;
-  background-color: rgba(250, 244, 244, 0.171);
+  background-color: #aab8c2;
   color: whitesmoke;
   font-weight: bold;
   border: 2px solid rgba(250, 244, 244, 0.089);
@@ -65,7 +65,7 @@ body {
   box-shadow: 2px 2px 5px white;
   z-index: -1;
 }
-.image-container {
+/* .image-container {
   background-color: #23bbe9;
   border-radius: 51%;
   width: 125px;
@@ -75,4 +75,4 @@ body {
   right: -30px;
   box-shadow: 2px 2px 5px #23bbe9;
   z-index: -1;
-}
+} */
