@@ -50,7 +50,7 @@ li {
   .navbar-home ul {
     display: none;
     position: fixed;
-    top: 120px;
+    top: 150px;
     left: 0;
     width: 100%;
     background-color: rgb(5, 5, 53);
