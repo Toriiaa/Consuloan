@@ -6,7 +6,7 @@
   height: 100vh;
 }
 .inner-container {
-  background-color: rgba(250, 244, 244, 0.089);
+  background-color: rgba(221, 213, 213, 0.089);
   border-radius: 12px;
   padding: 30px;
   border: 2px solid rgba(255, 255, 255, 0.178);
@@ -24,7 +24,7 @@
 input {
   padding: 13px;
   margin: 5px 0;
-  width: 90%;
+  width: 100%;
   border-radius: 12px;
   background-color: rgba(250, 244, 244, 0.171);
   color: whitesmoke;
@@ -43,7 +43,7 @@ h2 {
   color: white;
 }
 button {
-  background-color: #f35160;
+  background-color: rgb(5, 5, 53);
   padding: 7px;
   border-radius: 12px;
   border: 0;
@@ -52,17 +52,17 @@ button {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-image: linear-gradient(to right, #23bbe9, #f35160);
+  background-image: linear-gradient(to right, rgba(47, 47, 182, 0.76), white);
 }
 .image-container2 {
-  background-color: #f35160;
+  background-color: rgb(243, 239, 217);
   border-radius: 51%;
   width: 125px;
   height: 125px;
   position: absolute;
   top: 310px;
   left: -30px;
-  box-shadow: 2px 2px 5px #f35160;
+  box-shadow: 2px 2px 5px white;
   z-index: -1;
 }
 .image-container {
